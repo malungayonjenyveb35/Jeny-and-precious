@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7e9f8">
+
+    <title>Our Little Love Story ♡</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Floating Decorations -->
+    <div class="floating-decoration" aria-hidden="true">
+        <span>♡</span>
+        <span>🦋</span>
+        <span>💕</span>
+        <span>♡</span>
+        <span>🌷</span>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">♡ Our Love Story</a>
+        <span>Forever & Always</span>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="hero" id="home">
+
+        <div class="butterfly">🦋</div>
+
+        <p class="eyebrow">A LITTLE WEBSITE MADE WITH LOVE</p>
+
+        <h1>
+            Happy Monthsary,
+            <span>My Love! ♡</span>
+        </h1>
+
+        <p class="hero-text">
+            You are my favorite person in the world.
+            Thank you for being part of my story.
+        </p>
+
+        <a href="#journey" class="main-button">
+            Explore Our Love Story 💗
+        </a>
+
+        <div class="hero-decoration">♡</div>
+
+    </section>
+
+    <!-- Love Counter -->
+    <section class="journey section" id="journey">
+
+        <p class="section-label">EVERY SECOND MATTERS</p>
+
+        <h2>♡ Our Love Journey ♡</h2>
+
+        <p class="section-description">
+            Every second with you is precious.
+        </p>
+
+        <div class="timer">
+
+            <div class="time-box">
+                <strong id="days">0</strong>
+                <span>Days</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="hours">0</strong>
+                <span>Hours</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="minutes">0</strong>
+                <span>Minutes</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="seconds">0</strong>
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+        <p class="counter-caption">
+            And still counting... ♡
+        </p>
+
+    </section>
+
+    <!-- Memories -->
+    <section class="memories section" id="memories">
+
+        <p class="section-label">OUR FAVORITE CHAPTERS</p>
+
+        <h2>Our Sweet Memories 📸</h2>
+
+        <p class="section-description">
+            Little moments that mean everything to me.
+        </p>
+
+        <div class="gallery">
+
+            <div class="photo-card">
+                <img src="/2.jpeg" alt="Our first memory">
+                <p>Our First Memory ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="/happy.jpg" alt="Our happy moments">
+                <p>My Happy Place ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="/1.jpg" alt="Our special moments">
+                <p>Just Us ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="/fav.jpg" alt="Our favorite picture">
+                <p>Forever Favorite ♡</p>
+            </div>
+
+        </div>
+
+        <p class="photo-note">
+            Every picture tells a story, and you're my favorite part.
+        </p>
+
+    </section>
+
+    <!-- Reasons -->
+    <section class="reasons section">
+
+        <p class="section-label">A LITTLE REMINDER</p>
+
+        <h2>Reasons Why I Love You 💗</h2>
+
+        <p class="section-description">
+            Tap each heart to discover a little message.
+        </p>
+
+        <div class="heart-buttons">
+
+            <button onclick="showReason(0)">♡</button>
+            <button onclick="showReason(1)">♡</button>
+            <button onclick="showReason(2)">♡</button>
+            <button onclick="showReason(3)">♡</button>
+            <button onclick="showReason(4)">♡</button>
+
+        </div>
+
+        <div class="reason-display" id="reasonText">
+            Choose a heart, my love! 💕
+        </div>
+
+    </section>
+
+    <!-- Secret Love Letter -->
+    <section class="secret-letter section" id="letter">
+
+        <p class="section-label">SOMETHING SPECIAL FOR YOU</p>
+
+        <h2>💌 A Secret Letter</h2>
+
+        <p class="section-description">
+            I have something to tell you, langga.
+            But first, prove that you remember our special day.
+        </p>
+
+        <!-- Locked Card -->
+        <div class="lock-card" id="lockCard">
+
+            <div class="envelope" id="envelope">
+                <div class="envelope-heart">💗</div>
+            </div>
+
+            <h3>Before You Open My Letter...</h3>
+
+            <p>
+                Can you remember the date when
+                our love story officially began?
+            </p>
+
+            <label for="dateAnswer">
+                Enter Our Anniversary Date ♡
+            </label>
+
+            <input
+                type="date"
+                id="dateAnswer"
+                autocomplete="off"
+            >
+
+            <button class="unlock-button" onclick="unlockLetter()">
+                Unlock My Letter 💌
+            </button>
+
+            <p id="dateMessage" aria-live="polite"></p>
+
+            <small>
+                Hint: The day we officially became us. ♡
+            </small>
+
+        </div>
+
+        <!-- Revealed Letter -->
+        <article class="letter-content" id="loveLetter">
+
+            <div class="letter-flower">🌷</div>
+
+            <p class="letter-label">A LETTER FROM MY HEART</p>
+
+            <h2>boom kilig♡</h2>
+
+            <div class="letter-body">
+
+                My dearest langga, ♡
+
+                <br><br>
+
+                Happy Monthsary, love! Another month has passed,
+                and here we are, still choosing each other.
+                I just want you to know how thankful I am nga
+                naa ka sa akong life.
+
+                <br><br>
+
+                Kabalo ka, dili man siguro perfect atong
+                relationship. We have our own differences,
+                misunderstandings, and days nga dili ta
+                magkasinabot. But despite all of that,
+                I'm still grateful because I get to experience
+                life with you.
+
+                <br><br>
+
+                Thank you for your patience, sa imong
+                understanding, sa imong efforts, and even
+                sa mga little things nga imong ginabuhat
+                nga usahay wala nako ma-express kung
+                unsa ko ka-thankful.
+
+                <br><br>
+
+                Pasensya na if there are times nga dili ko
+                kabalo unsaon pag-express sa akong feelings,
+                or if sometimes I fall short sa imong
+                expectations. I'm still learning, growing,
+                and trying to become a better partner for you.
+
+                <br><br>
+
+                Gusto nako nga kabalo ka nga dili lang
+                sa happy days tika pilion. Even on difficult
+                days, I want us to understand each other,
+                choose each other, and work things out
+                together.
+
+                <br><br>
+
+                I don't know exactly what the future holds
+                for us, but I want to create more beautiful
+                memories with you. More dates, more laughter,
+                more pictures, more random conversations,
+                and more monthsaries to celebrate.
+
+                <br><br>
+
+                Amping always, ha? Ayaw kalimot nga naa
+                ra ko diri, always cheering for you and
+                supporting you in everything you do.
+
+                <br><br>
+
+                Thank you for being my person, my happiness,
+                and one of the sweetest parts of my life.
+
+                <br><br>
+
+                I love you, langga. And if I had to choose
+                again, ikaw gihapon. Always ikaw. ♡
+
+            </div>
+
+            <div class="signature">
+                <p>With all my love,</p>
+                <h3>Jeny ♡</h3>
+            </div>
+
+            <div class="letter-bottom">🦋 ♡ 🌷</div>
+
+        </article>
+
+    </section>
+
+    <!-- Final Message -->
+    <section class="ending section">
+
+        <div class="ending-heart">💗</div>
+
+        <h2>It's Always You.</h2>
+
+        <p>
+            
+            In every lifetime, I would still choose you.
+        </p>
+
+        <h3>Forever & Always ♡</h3>
+
+        <div class="ending-decoration">🦋 🌷 🦋</div>
+
+    </section>
+
+    <footer>
+        <p>Made with love, especially for you.</p>
+        <p>© Our Little Love Story ♡</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
